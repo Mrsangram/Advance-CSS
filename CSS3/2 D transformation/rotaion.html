@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D transformation</title>
+    <style>
+            div{
+                width: 200px;
+                height: 300px;
+                background: orange;
+                border:2px solid #000;
+                /* transform: translate(50px,100px); */
+            }
+
+    </style>
+</head>
+<body>
+    
+    <h1>2D transformation</h1>
+    <div style="background-color: lightblue;position: absolute;">
+        Old
+     </div>
+
+     <div id="trans">
+        After translating The graphics
+     </div>
+
+     <br>
+     <a href="1_1.html"></a><button type="button" onclick="myTrans()">Click Me</button></a>
+        <script>
+                function myTrans(){
+            
+                    document.getElementById("trans").style.transform = " rotate(10deg)"
+            
+
+
+            }
+
+                
+        </script>
+</body>
+</html>

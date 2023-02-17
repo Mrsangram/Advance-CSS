@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Button</title>
+    <style>
+        .btn {
+            background: green;
+            padding: 20px 50px;
+            color: white;
+            font-size: 30px;
+            white-space: nowrap;
+            border: none;
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            transition: all 0.9s;
+        }
+        .btn span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .btn span:after{
+            content: "\00bb";
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .btn:hover span{
+            padding-right:25px ;
+        }
+        .btn:hover span::after{
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Animated button</h1>
+    <button type="button" class="btn"><span>Click</span></button>
+</body>
+
+</html>

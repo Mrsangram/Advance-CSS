@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+input[type=text] ,input[type=password]{
+  
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+border-bottom: 2px solid red;
+}
+input[type=text]:hover{
+  border-bottom: 2px solid green;
+}
+
+*{
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Input fields with borders</h2>
+
+<form>
+  <label for="fname">First Name</label><br>
+  <input type="text" id="f_name" name="f_name"><br>
+  <label for="lname">Last Name</label>&nbsp;<br>
+  
+  <input type="text" id="l_name" name="l_name"><br>
+  <label for="pass">Password</label>&nbsp;<br>
+  <input type="password" name="pass" id="pass"/>
+</form>
+
+</body>
+</html>
+
+

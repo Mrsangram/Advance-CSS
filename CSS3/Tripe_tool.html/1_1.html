@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripe tool</title>
+
+    <style>
+        #btn{
+            background: blue;color: white;border: none;
+            padding: 10px 10px;
+            
+        }
+        #btn:hover{background-color: #ccc;color: blue;border: 1px solid rgb(120, 32, 32);}
+        .tooptip .tooltiptext{
+            visibility: hidden;
+            width: 120px;
+            background: black;
+            color: white;text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top:47px;
+            left: -2px;
+            transition: all 6s ease-in;
+        }
+
+        .tooptip:hover .tooltiptext{
+            visibility: visible;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="tooptip">
+      <button type="button" name="btn" id="btn">Clike ME 
+
+      </button><span class="tooltiptext"> Clike Me</span>
+    </div>
+</body>
+</html>

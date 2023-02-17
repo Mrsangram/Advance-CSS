@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D transformation</title>
+
+    <style>
+
+            .nor_div{background: blue;height: 300px;width: 400px;position: absolute;float: left;animation-name:col;animation-duration: 1s;animation-iteration-count: infinite;}
+            @keyframes col {
+                from{ background-color: orange;
+                background-color: lightgoldenrodyellow; transition: 2s ease-in-out;}
+                to{
+                    background-image: url(..//boder-img/212323546ba-colorful-fireworks-animated-gif-pic.gif);
+                    width: 700px;
+                }
+            }
+            
+            #rotx{
+                background: blue;
+                height: 300px;
+                width: 300px;
+                margin: auto;
+                border: 2px solid #000;
+                animation-name: rotx;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+
+            }
+            @keyframes rotx {
+
+                from{
+                    background: url(..//boder-img/2001b84f13b22f24735cead6c71f6633.gif);
+                    background-color: aqua;
+
+
+                }
+                to{
+                    background: url(..//boder-img/35590-3-red-flower-frame-free-download.png);
+                    transform: rotateX(150deg);
+
+                }
+                
+            }
+
+
+    </style>
+</head>
+<body>
+    
+
+     <h1>3D transformation</h1>
+    
+     <p>Rotation in css3</p>
+
+      <div class="nor_div">
+     <div id="rotx"></div></div>
+
+     
+
+ 
+      
+</body>
+</html>

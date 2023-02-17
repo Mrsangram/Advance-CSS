@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card in using css</title>
+    <style>
+
+        .card{
+            height: 270px;
+            width: 300px;
+            box-shadow: 12px 4px 8px 0 rgba(0, 0, 0, 0.2), 1px 6px 20px 0 rgba(0, 0, 0, 0.19),4px 5px 6px #000;
+        }
+        div.card {
+            width: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+
+        div.header {
+            background-color: aqua;
+            background-image: url('..//boder-img/35590-3-red-flower-frame-free-download.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            color: white;
+            text-shadow: 2px 6px #000;
+            padding: 10px;
+            font-size: 40px;
+        }
+
+        div.container {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="card">
+        <div class="header">
+            <h1 id="dd">1</h1>
+        </div>
+
+        <div class="container">
+            <span id="month">may</span>,
+            <span id="current_date">January 1, 2021</span>
+        </div>
+    </div>
+
+    <script>
+
+
+        document.getElementById("dd").innerHTML = new Date().getDate();
+
+        const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        const d = new Date();
+        let name = month[d.getMonth()];
+        document.getElementById("month").innerHTML = name;
+        document.getElementById("current_date").innerHTML = new Date().getFullYear();
+
+    </script>
+
+</body>
+
+</html>

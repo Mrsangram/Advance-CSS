@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Imgage Overlay</title>
+
+
+    <style>
+        div.img1,
+        div.img2,
+        div.img3,
+        div.img4,
+        div.img5,
+        div.img6 {
+
+            position: relative;
+            height: 400px;
+            width: 400px;
+            float: left;
+            margin-left: 22px;
+            margin-top: 22px;
+            border: 1px solid rgb(59, 45, 45);
+            box-shadow: 2px 2px 12px 2px rgb(59, 45, 45);
+
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+        }
+
+        .img1:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            white-space:nowrap;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        /* second */
+
+        .image1 {
+            display: block;
+            width: 100%;
+            height: auto;
+            backface-visibility: hidden;
+        }
+
+        .overlay1 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #ccc;
+        }
+
+        .img2:hover .image1 {
+            opacity: 0.3;
+        }
+
+        .img2:hover .overlay1 {
+            opacity: 1;
+        }
+
+
+        .text1 {
+            color: white;
+            background: rgb(13, 154, 88);
+            padding: 10px 10px;
+            font-size: 20px;
+            white-space:nowrap;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        /* 3 step in css */
+        .image3 {
+            height: 100%;
+            width: auto;
+            display: block;
+        }
+
+        .overlay3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 100%;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: auto;
+            height: 0;
+            transition: .5s ease;
+        }
+
+        .img3:hover .overlay3 {
+            bottom: 0;
+            height: 100%;
+
+        }
+
+        .text3 {
+            color: white;
+            white-space:nowrap;
+            font-size: 22px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+        }
+
+        /* 4th images */
+
+        .image4 {
+            height: 100%;
+            width: auto;
+            display: block;
+        }
+
+        .overlay4 {
+            position: absolute;
+            left: 0;
+            right:0;
+            bottom: 0;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: auto;
+            height: 0;
+            transition: .5s ease;
+        }
+
+        .img4:hover .overlay4 {
+            
+            height: 100%;
+
+        }
+
+        .text4 {
+            color: white;
+            white-space:nowrap;
+            font-size: 22px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+        }
+
+        /* 5 style */
+
+        
+        .image5 {
+            height: 100%;
+            width: auto;
+            display: block;
+        }
+
+        .overlay5 {
+            position: absolute;
+            left: 0;
+            right:0;
+            bottom: 0;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: 0;
+            height: auto;
+            transition: .5s ease;
+        }
+
+        .img5:hover .overlay5 {
+            
+            height: 100%;
+
+        }
+
+        .text5 {
+            color: white;
+            white-space:nowrap;
+            font-size: 22px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+
+    <div class="img1">
+        <img src="img_avatar3.png" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Hello World</div>
+        </div>
+
+    </div>
+    <div class="img2">
+        <img src="img_avatar3.png" alt="Avatar" class="image1">
+        <div class="overlay1">
+            <div class="text1">Hello World</div>
+        </div>
+
+
+
+    </div>
+    <div class="img3">
+
+        <img src="img_avatar3.png" alt="Avatar" class="image3">
+        <div class="overlay3">
+            <div class="text3">Hello World</div>
+        </div>
+
+
+    </div>
+    <div class="img4">
+    
+        
+        <img src="img_avatar3.png" alt="Avatar" class="image4">
+        <div class="overlay4">
+            <div class="text4">Hello World</div>
+        </div>
+
+    </div>
+    <div class="img5">
+
+        <img src="img_avatar3.png" alt="Avatar" class="image5">
+        <div class="overlay5">
+            <div class="text5">Hello World</div>
+        </div>
+
+    </div>
+    <div class="img6"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input[type=text] {
+            width: 130px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('img/search.png');
+            background-size: 35px;
+            background-position:8px 5px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            transition: width 0.4s ease-in-out;
+
+
+        }
+
+        input[type=text]:focus{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h2>Input field with an icon inside</h2>
+    <form action="post">
+        <input type="text" name="search" id="search" placeholder="Search..">
+    </form>
+</body>
+
+</html>

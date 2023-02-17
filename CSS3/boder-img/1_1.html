@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boder image in CSS3</title>
+    <style>
+        body {
+
+            border: 60px solid transparent; 
+            width: 500px;
+            height: 250px;
+            position: fixed;
+            
+            
+            border-image: url(imgbin_frame-png.png) 10% stretch;
+        }
+        #blink{
+            text-align: center;
+            margin-top: 2%;
+        }
+    </style>
+    
+    <script>
+
+function Blink()
+		     {
+			   var txt = document.getElementById("blink");
+			     if(txt.style.color == 'lightblue')
+			       {
+			        txt.style.color='red'; 
+                    txt.style.fontSize="170px";
+                    txt.innerHTML="2"
+                    txt.style.backgroundImage="url('35590-3-red-flower-frame-free-download.png')"
+                    
+
+                
+				   }
+			 else if(txt.style.color=='red')
+			    {
+			      txt.style.color ='blue';
+                  txt.style.fontSize="170px";
+                  txt.innerHTML="1"
+                  txt.style.backgroundImage="url('rose-border-transparent-7.png')"
+                      
+			    }
+			 else if(txt.style.color == 'blue')
+			      {
+				     txt.style.color='orange';
+                     txt.style.fontSize="170px";
+                     txt.innerHTML="0"
+                     txt.style.backgroundImage="url('35590-3-red-flower-frame-free-download.png')"
+            
+				  }
+			   else
+			   {
+			    	txt.style.color="lightblue";
+                    txt.style.fontSize="80px";
+                    txt.innerHTML="Welcome to India";
+                    txt.style.backgroundImage="url('321-3210023_frame-border-peace-rose-decorative-peace-rose-border.png')"
+                    txt.style.fontFamily="Impact";
+                    txt.style.textShadow = "2px 6px red";
+            
+			   }
+		  setTimeout('Blink()',1200); 
+	}
+    </script>
+</head>
+<body>
+    <p id="blink" onclick="Blink()">Click Me Make<br> A magic</p>
+</body>
+
+</html>

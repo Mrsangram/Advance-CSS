@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Height Fixed vertical Navbar</title>
+
+    <style>
+        
+        *{padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 25%;
+            background: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        li a{
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a.active{
+            background-color: #04aa6d;
+            color: white;
+        }
+        li a:hover:not(.active){
+            background-color: #555;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+      <ul>
+
+         <li><a href="Project_wrok1.html">Home</a></li>
+         <li><a href="#"  class="active">News</a></li>
+         <li><a href="">Contact</a></li>
+         <li><a href="">About</a></li>
+      </ul>
+
+    <div style="margin-left:25%;padding:1px 16px;height:1000px">
+        <h1>News</h1>
+        <h3>Try to scroll this area,and see how the sidenav sticks to the page</h3>
+
+        <p>
+            Notice that this div elelment has a left margin of 25%
+            this is because the side navigation os set of 25% width. If you remove the margin, the margin ,the sodenav will overlay/site on tap of this div.
+        </p>
+
+        <p>
+            Also notice that we that we have set overflow:auto to sixenav.this will add a scrollbar when the sidenav is too long(for example if it has over 50 links inside of it)
+
+        </p>
+
+        <p>some text........</p>
+        <p>some text........</p>
+        <p>some text........</p>
+    </div>
+</body>
+</html>
